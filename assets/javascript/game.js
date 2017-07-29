@@ -26,8 +26,7 @@ $(".animalButton").on("click", function() {
 	var q = this.value;
 	var apiKey = "cd10f8effaaf40b2bd9f87cf218a3efe"
 
-      // Storing our giphy API URL for a random cat image
-      // var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&" + tag;
+      // Storing our giphy API URL
       var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "&q=" + q + "&limit=25&offset=0&rating=G&lang=en";
 
       // Perfoming an AJAX GET request to our queryURL
