@@ -22,6 +22,7 @@ function buttons() {
 		var newAnimal = $("#animalName").val().trim();
 		topics.push(newAnimal);
 		buttons();
+		$("#animalName").val("");
 	}
 
 	$("#submit").on("click", addingButtons);
