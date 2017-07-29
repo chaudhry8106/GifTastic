@@ -15,11 +15,23 @@ function buttons() {
 			button.attr("value", topics[i]);
 			$(".buttons").append(button);
 	}
+
+		$(".animalButton").on("click", app);
+
+		function addingButtons() {
+		var newAnimal = $("#animalName").val().trim();
+		topics.push(newAnimal);
+		buttons();
+	}
+
+	$("#submit").on("click", addingButtons);
+
 }
 
 buttons();
 
-$(".animalButton").on("click", function() {
+
+function app() {
 
 	$("#images").empty();
 
@@ -85,15 +97,8 @@ $(".animalButton").on("click", function() {
         $(newDiv).prepend(image);
         $(newDiv).prepend("Rating: " + ratings + "<br>");
         $("#images").append(newDiv);
-      	}
 
-      	function addingButtons() {
-			var newAnimal = $("#animalName").val().trim();
-			topics.push(newAnimal);
-			buttons();
-		}
+    }
 
-		$("#submit").on("click", addingButtons);
-
-      });
-    });
+  });
+};
