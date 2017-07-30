@@ -1,5 +1,5 @@
-var topics = ["dog", "cat", "rabbit", "horse", "camel", 
-			  "goat", "cow", "chicken", "monkey", "fish"];
+var topics = ["dog", "cat", "rabbit", "horse", "bee", 
+			  "goat", "cow", "chicken", "parrot", "fish"];
 
 
 
@@ -40,7 +40,7 @@ function app() {
 	var apiKey = "cd10f8effaaf40b2bd9f87cf218a3efe"
 
       // Storing our giphy API URL
-      var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "&q=" + q + "&limit=25&offset=0&rating=G&lang=en";
+      var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "&q=" + q + "&limit=25&offset=0&rating=pg-13&lang=en";
 
       // Perfoming an AJAX GET request to our queryURL
       $.ajax({
